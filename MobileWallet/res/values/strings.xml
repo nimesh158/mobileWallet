@@ -17,4 +17,9 @@
 	<string name="okay">OK</string>
 	<string name="addNewCard">Add New Credit Card</string>
 	<string name="creditCards">Credit Cards</string>
+	<string name="creditCardName">Card Name:</string>
+	<string name="done">Done</string>
+	<string name="enter_cc_hint">Enter Card Name</string>
+	<string name="front_picture">Front Picture</string>
+	<string name="back_picture">Back Picture</string>
 </resources>

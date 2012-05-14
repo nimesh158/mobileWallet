@@ -4,8 +4,11 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-    <uses-sdk android:minSdkVersion="7" />
-    <uses-feature android:name="android.hardware.camera" />
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+	<uses-feature android:name="android.hardware.camera" />
+ 	<uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -44,12 +47,21 @@
          <activity
             android:name=".HomeActivity"
             android:label="@string/app_name" 
-            android:theme="@android:style/Theme.NoTitleBar" android:launchMode="singleInstance">
+            android:theme="@android:style/Theme.NoTitleBar" android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />                
+            </intent-filter>
+         </activity>
+         <!-- Enter Credit Card Information activity -->
+         <activity
+             android:name=".CreditCardInformationActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar" android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />                
             </intent-filter>
          </activity>
     </application>
-
 </manifest>

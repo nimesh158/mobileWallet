@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="10dip"
+    android:orientation="vertical">
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dip"
+	    android:orientation="horizontal">    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/creditCardName" />
+		    
+		    <EditText 
+		        android:id="@+id/credit_card_name"
+		        android:hint="@string/enter_cc_hint"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingLeft="10dip"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:weightSum="1.0">
+	    
+	    <Button 
+	        android:id="@+id/fontButton"
+	        android:layout_width="0dip"
+	        android:layout_weight=".5"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:text="@string/front_picture"
+	    	android:layout_marginTop="50dip"
+	    	android:gravity="center"
+	    	android:enabled="true"
+	        android:onClick="takeFrontImage" />
+	    
+	    <Button 
+	        android:id="@+id/backButton"
+	        android:layout_width="0dip"
+	        android:layout_weight=".5"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="@string/back_picture"
+	    	android:layout_marginTop="50dip"
+	    	android:gravity="center"
+	    	android:enabled="true"
+	        android:onClick="takeBackImage" />
+	    
+	</LinearLayout>
+		    
+    <Button 
+        android:id="@+id/doneButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+    	android:layout_marginTop="50dip"
+    	android:gravity="center"
+    	android:enabled="false"
+        android:onClick="doneAndContinue" />
+</LinearLayout>

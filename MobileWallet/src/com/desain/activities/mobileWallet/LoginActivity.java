@@ -46,14 +46,7 @@ public class LoginActivity extends Activity {
     		      public void onClick(DialogInterface dialog, int which) {} 
     		});
     		alert.show();
-    	} else {
-    		AlertDialog alert = new AlertDialog.Builder(this).create();
-    		alert.setTitle(getResources().getString(R.string.login_successful));
-    		alert.setButton(getResources().getString(R.string.okay), new DialogInterface.OnClickListener() {
-    		      public void onClick(DialogInterface dialog, int which) {} 
-    		});
-    		alert.show();
-    		
+    	} else {    		
     		startActivity(new Intent(LoginActivity.this, HomeActivity.class));
     		finish(); // Required to not stack the activities on top of each other
     	}

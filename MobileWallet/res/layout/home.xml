@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/scrollView">
         
-	    <TableLayout
+	    <TableLayout 
 	    	android:id="@+id/ccTable"
 	    	android:layout_width="fill_parent"
 	    	android:layout_height="wrap_content"
