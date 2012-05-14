@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mobile Wallet</string>
+	<string name="enter_username">Username:</string>
+	<string name="enter_password">Password:</string>
+	<string name="confirm_password">Confirm</string>
+	<string name="enter_username_hint">Enter Username</string>
+	<string name="enter_password_hint">Enter Password</string>
+	<string name="confirm_password_hint">Confirm Password</string>
+	<string name="register">Register</string>
+	<string name="login">Login</string>
+	<string name="password_cannot_be_null">Password field cannot be empty</string>
+	<string name="username_cannot_be_empty">Username cannot be empty</string>
+	<string name="usernames_do_not_match">Usernames do not match</string>
+	<string name="passwords_do_not_match">Passwords do not match</string>
+	<string name="login_successful">Login Successful</string>
+	<string name="okay">OK</string>
+	<string name="addNewCard">Add New Credit Card</string>
+	<string name="creditCards">Credit Cards</string>
+</resources>

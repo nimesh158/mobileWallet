@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip"
+    android:orientation="vertical">
+    
+    <!--  App name -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="35sp"
+        android:text="@string/app_name" />
+    
+    <!-- Username text and field -->
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dip"
+    android:orientation="horizontal">    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/enter_username" />
+	    
+	    <EditText 
+	        android:id="@+id/username"
+	        android:hint="@string/enter_username_hint"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"/>        
+    </LinearLayout>
+	
+    <!-- Password text and field -->
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dip"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/enter_password" />
+	    <EditText 
+	        android:id="@+id/password"
+	        android:hint="@string/enter_password_hint"
+	        android:inputType="textPassword"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+	<!-- Confirmation of password text and field -->
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dip"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/confirm_password" />  
+	    <EditText 
+	        android:id="@+id/confirm_password"
+	        android:hint="@string/confirm_password_hint"
+	        android:inputType="textPassword"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	<!-- Register button -->
+	<Button 
+	    android:id="@+id/register"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="50dip"
+	    android:gravity="center"
+	    android:text="@string/register"
+	    android:onClick="registerAndContinue"/>
+	
+</LinearLayout>
